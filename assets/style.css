@@ -1,0 +1,604 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    width:100vw;
+    height: 100vh;
+    background-color: #eee;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+  }
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  } */
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#landingpara{
+
+    font-family: Agbalumo;
+}
+
+.header {
+    width: 100vw;
+    height: 7.5vh;
+    background-color: #f8f8f8;
+    border-bottom: 0.02vh solid #f2ffff; /* 0.2px converted to vh */
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+
+.header b {
+    margin-left: 8vw; /* 100px converted to vh */
+    position: absolute;
+    margin-top: 1.5vh; /* 15px converted to vh */
+    /* font-size: 3.4vh; */
+}
+
+.headercontent {
+    position: absolute;
+    margin-left:55vw;
+    height: 7.5vh; /* 55px converted to vh */
+    overflow: hidden;
+}
+
+.navbar-nav a {
+    padding-top: 2.1vh;
+    height: 6.0vh; /* 55px converted to vh */
+    /* margin-top: 1.5vh; 17px converted to vh */
+    display: inline-block;
+    font-size: 2.0vh; /* 20px converted to vh */
+    padding-right: 2vw; /* 40px converted to vh */
+    padding-left: 2vw; /* 40px converted to vh */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    /* background-color: rgb(70,69,69); */
+}
+
+.navbar-nav a:hover{
+    color: white;
+    background-color: aqua !important;
+}
+
+.header img {
+    width: 5.5vw;
+    height: 5.5vh; /* 55px converted to vh */
+    margin-left: 1vw;
+    margin-top: 1vh;
+    display: inline-block;
+    position: absolute;
+}
+
+.design {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    background-color: black;
+}
+
+.design img {
+    width: 35vw;
+    height: 60vh;
+    margin-left: 60vw;
+    top: 12.5vh;
+    display: block;
+    float: right;
+    position: absolute;
+}
+
+.design h1 {
+    position: absolute;
+    color: aquamarine;
+    font-size: 7vh;
+    font-family: Agbalumo;
+    left: 10vw;
+    top: 8vh;
+    /*overflow: hidden;                   
+    white-space: nowrap;
+    animation: typing 3.5s steps(20, end) forwards, blink-caret 0.075s step-end infinite; Adjusted animation values for better visibility */
+}
+
+.design button {
+    background-color: aquamarine;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 64vh; /* Adjusted from 500px */
+    margin-left: 24vw;
+    width: 15vw;
+    height: 6vh;
+    font-size: 2.8vh;
+}
+
+.design button:hover {
+    background-color: rgb(184, 103, 116);
+    color: white;
+}
+
+.design p {
+    left: 5vw; /* Adjusted from 5% */
+    font-size: 3vh;
+    top: 26vh; /* Adjusted from 230px */
+    position: absolute;
+    width: 50vw;
+    text-align: justify;
+    color: white;
+}
+
+.design {
+    position: absolute;
+    top: 55px;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    background-color: rgb(15, 15, 16);
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(52, 15, 17));
+    overflow: hidden;
+}
+
+.design #pic1 {
+    width: 35%;
+    height: 60%;
+    margin-left: 59%;
+    top: 125px;
+    display: relative;
+    float: right;
+    position: absolute;
+    animation-name: fade1;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+.design #pic2 {
+    width: 35%;
+    height: 60%;
+    margin-left: 59%;
+    top: 125px;
+    display: relative;
+    float: right;
+    position: absolute;
+    animation-name: fade2;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+.design #pic3 {
+    width: 35%;
+    height: 60%;
+    margin-left: 59%;
+    top: 125px;
+    display: relative;
+    float: right;
+    position: absolute;
+    animation-name: fade3;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+.design #pic4 {
+    width: 35%;
+    height: 60%;
+    margin-left: 59%;
+    top: 125px;
+    display: relative;
+    float: right;
+    position: absolute;
+    animation-name: fade4;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+
+.design h1 {
+    position: absolute;
+    color: rgb(228, 226, 226);
+    font-size: 60px;
+    left: 7%;
+    top: 100px;
+    overflow: hidden;
+    border-right: .15em solid white;
+    font-family: 'Caveat', cursive;
+    white-space: nowrap;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    animation: typing 2s steps(20, end) forwards, blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from {
+        border-color: white;
+    }
+    to{
+        border-color: transparent;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to{
+        width: 35vw;
+      }
+}
+
+/* Media Queries for Responsive Design */
+/* @media (max-width: 768px) {
+    .header b {
+        padding-left: 2vh;
+        font-size: 2vh;
+    }
+
+    .headercontent a {
+        font-size: 1.8vh; 
+    }
+
+    .design h1 {
+        font-size: 4vh;
+    }
+
+    .design button {
+        width: 20vh;
+        height: 4vh;
+        font-size: 2vh;
+    }
+
+    .design p {
+        font-size: 1.8vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 10vh;
+    }
+
+    .header b {
+        font-size: 1.8vh;
+    }
+
+    .headercontent a {
+        font-size: 1.6vh;
+    }
+
+    .design h1 {
+        font-size: 3vh;
+    }
+
+    .design button {
+        width: 15vh;
+        height: 3vh;
+        font-size: 1.6vh;
+    }
+
+    .design p {
+        font-size: 1.6vh;
+    }
+} */
+
+.column {
+    float: left;
+    width: 25vw;
+    margin-left: 6vw;   
+    background-color: white;
+    height: 55vh;
+    box-shadow: 0 0.4vh 0.8vh 0 rgba(0, 0, 0, 0.2), 0 0.6vh 2vh 0 rgba(0, 0, 0, 0.19);
+}
+
+.column:hover {
+    box-shadow: 0 0.4vh 0.8vh 0 rgba(130, 200, 255), 0 0.6vh 2vh 0 rgba(130, 200, 255);
+}
+
+/* Clear floats after the columns */
+.row {
+    display: table;
+    top: 100vh;
+    width: 100vw;
+    height: 65vh;
+    position: absolute;
+    opacity: 1;
+
+}
+
+
+.column h1 {
+    text-align: center;
+}
+
+.footer {
+    top: 165vh;
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    height: 5vh;
+}
+@keyframes blink-caret {
+    from {
+        border-color: white;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header b {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .headercontent a {
+        font-size: 18px;
+    }
+
+    .design h1 {
+        font-size: 40px;
+    }
+
+    .design button {
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .design p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 10vh;
+    }
+
+    .header b {
+        font-size: 18px;
+    }
+
+    .headercontent a {
+        font-size: 16px;
+    }
+
+    .design h1 {
+        font-size: 30px;
+    }
+
+    .design button {
+        width: 150px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .design p {
+        font-size: 16px;
+    }
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+  /* Clear floats after the columns */
+.row{
+    display: table;
+    top:100vh;
+    width:100%;
+    height:400px;
+    position: absolute;
+    background-color: beige;
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+ .row.appear{
+    opacity:1;
+ } 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @keyframes fade5 {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade1 {
+    0% {
+        opacity: 100%;
+    }
+
+    25% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    75% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    75% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+
+}
+
+@keyframes fade3 {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fade4 {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 0%;
+
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+
+    }
+}
+ 

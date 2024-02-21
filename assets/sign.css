@@ -1,0 +1,56 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #f2ffff;
+}
+
+.container {
+    top: 7vh;
+    height: 90vh;
+    width: 32vw; /* Adjusted from 410px */
+    left: 34vw; /* Adjusted from 73vh */
+    box-shadow: 0 1vw 2vw 0 rgba(0, 0, 0, 0.2); /* Adjusted from 0px 4px 8px 0 */
+    display: block;
+    background-color: white;
+    position: absolute;
+}
+
+.container img {
+    width: 13vw; /* Adjusted from 125px */
+    height: 13vh; /* Adjusted from 100px */
+    left: 9.5vw; /* Adjusted from 140px */
+    top: 3vh; /* Adjusted from 30px */
+    position: absolute;
+    display: block;
+}
+
+.container h1 {
+    left: 12.5vw; /* Adjusted from 145px */
+    top: 14vh; /* Adjusted from 120px */
+    position: absolute;
+    display: block;
+}
+
+.container form {
+    position: absolute;
+    top: 20vh; /* Adjusted from 180px */
+    left: 2vw; /* Adjusted from 30px */
+}
+.navbar-nav a {
+    padding-top: 2.1vh;
+    height: 7vh; /* 55px converted to vh */
+    /* margin-top: 1.5vh; 17px converted to vh */
+    display: inline-block;
+    font-size: 2.4vh; /* 20px converted to vh */
+    padding-right: 2vw; /* 40px converted to vh */
+    padding-left: 2vw; /* 40px converted to vh */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav a:hover{
+    color: white;
+    background-color: aqua !important;
+}

@@ -1,0 +1,19 @@
+/* #home{
+    position: fixed;
+    width: 100%;
+} */
+.container{
+    font-size: 20px;
+}
+
+input{
+    width: 100%;
+}
+
+.desc{
+    height: 300px;
+}
+
+#but1{
+    font-size: 100px;
+}

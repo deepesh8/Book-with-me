@@ -1,0 +1,29 @@
+.das{
+    border-top: 2px dashed black;
+}
+
+hr{
+    border-top: 2px solid black;
+}
+
+footer{
+    font-size: 15px;
+    color:li
+}
+
+body{
+    background-color: rgb(163, 159, 159);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(156, 156, 156), rgb(0, 0, 0));
+    color:white;
+}
+
+.jumbotron{
+    font-family: 'Merriweather', serif ;
+    background-image: linear-gradient(to right, rgb(156, 156, 156), rgb(0, 0, 0));
+}
+
+section{
+    font-family: 'Geologica', sans-serif;
+}

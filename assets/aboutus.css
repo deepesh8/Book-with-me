@@ -1,0 +1,49 @@
+.container {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+    color: rgb(209, 207, 207);
+    font-family: 'Merienda', cursive;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.jumbox1 {
+    background-color: rgb(163, 159, 159);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 45px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(49, 12, 14));
+}
+
+.jumbox1 h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Caveat', cursive;
+    text-shadow: 3px 3px 4px rgba(0,0, 0, 0.5);
+
+}
+
+.jumbox1 p {
+    color: rgb(0, 0, 0);
+    font-family: 'Merienda', cursive;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(32, 10, 11));
+}
+
+.header {
+   text-align: center;
+   font-family: 'Merienda', cursive;
+   font-size: 40px;
+   padding-top: 50px;
+   color: rgb(209, 207, 207);
+   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.img {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}

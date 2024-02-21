@@ -1,0 +1,219 @@
+/* Base Styles */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 7.5vh;
+    background-color: rgb(5, 5, 82);
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+
+.header b {
+    display: inline;
+    padding-left: 100px;
+    position: absolute;
+    padding-top: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+.headercontent {
+    width: 50%;
+    float: right;
+    height: 55px;
+    overflow: hidden;
+}
+
+.headercontent a {
+    height: 55px;
+    padding-top: 17px;
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.headercontent a:hover {
+    color: blue;
+    background-color: white;
+}
+
+.header img {
+    width: 90px;
+    height: 55px;
+    display: inline-block;
+    position: absolute;
+}
+
+.design {
+    position: absolute;
+    top: 55px;
+    height: 92.5vh;
+    width: 100%;
+    display: block;
+    background-color: blue;
+    background-image: linear-gradient(to right, rgb(67, 67, 194), rgb(5, 8, 51));
+}
+
+.design img {
+    width: 35%;
+    height: 50%;
+    margin-left: 59%;
+    top: 125px;
+    display: block;
+    float: right;
+    position: absolute;
+}
+
+.design h1 {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    left: 8%;
+    top: 100px;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    animation: typing 3.5s steps(20, end) forwards, blink-caret .75s step-end infinite;
+}
+
+.design button {
+    background-color: darkviolet;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid darkmagenta;
+    display: block;
+    position: absolute;
+    top: 500px;
+    margin-left: 22%;
+    width: 250px;
+    height: 50px;
+    font-size: 28px;
+}
+
+.design button:hover {
+    background-color: white;
+    color: darkviolet;
+}
+
+.design p {
+    left: 5%;
+    font-size: 24px;
+    top: 230px;
+    position: absolute;
+    color: white;
+    display: block;
+    width: 50%;
+    text-align: justify;
+}
+
+@keyframes blink-caret {
+    from {
+        border-color: white;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header b {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .headercontent a {
+        font-size: 18px;
+    }
+
+    .design h1 {
+        font-size: 40px;
+    }
+
+    .design button {
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .design p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 10vh;
+    }
+
+    .header b {
+        font-size: 18px;
+    }
+
+    .headercontent a {
+        font-size: 16px;
+    }
+
+    .design h1 {
+        font-size: 30px;
+    }
+
+    .design button {
+        width: 150px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .design p {
+        font-size: 16px;
+    }
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+  /* Clear floats after the columns */
+.row{
+    display: table;
+    top:100vh;
+    width:100%;
+    height:400px;
+    position: absolute;
+    background-color: beige;
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+ .row.appear{
+    opacity:1;
+ } 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
