@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <table border="1">
+        <form action="./authenticate.php" method="POST">
+        <tr><td>USERNAME</td><td><input type="text" name="user"></td></tr>
+        <tr><td>PASSWORD</td><td><input type="password" name="password"></td></tr>
+        <tr><td><button type="submit">SUBMIT</button></form><td><button onclick="newuser()">CREATE ACCOUNT</button></td></td></tr>
+    </table>
+    <div class="loader-wrapper" id="load">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  
+    <script>
+        window.onload = function () {
+            var elementToFade = document.getElementById("load");
+            fadeOut(elementToFade);
+        };
+
+        function fadeOut(element) {
+            var opacity = 1;
+            var timer = setInterval(function () {
+                if (opacity <= 0.1) {
+                    clearInterval(timer);
+                    element.style.display = "none";
+                }
+                element.style.opacity = opacity;
+                opacity -= 0.01;
+            }, 10);
+        }
+
+    </script>
+    <script>
+        function newuser(){
+            window.location = './newuser.html';
+        }
+    </script>
+</body>
+</html>

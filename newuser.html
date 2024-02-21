@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        .table{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+        }
+        .loader-wrapper{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <form action="newuser.php" method="POST" >
+        <table border="1" class="table">
+            <tr><td>username</td><td><input type="text" name="user"></td></tr>
+            <tr><td>password</td><td><input type="password" name="passkey"></td></tr>
+            <tr><td>confirm password</td><td><input type="password" name="repasskey"></td></tr>
+            <tr><td><button type="button" id="but1">SUBMIT</button></td></tr>
+        </table>
+    </form>
+    <div class="loader-wrapper" id="load">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  
+    <script>
+        window.onload = function () {
+            var elementToFade = document.getElementById("load");
+            fadeOut(elementToFade);
+        };
+
+        function fadeOut(element) {
+            var opacity = 1;
+            var timer = setInterval(function () {
+                if (opacity <= 0.1) {
+                    clearInterval(timer);
+                    element.style.display = "none";
+                }
+                element.style.opacity = opacity;
+                opacity -= 0.009;
+            }, 10);
+        }
+
+        document.getElementById("but1").addEventListener("click",function(){
+            docuemnt.getElementById("")
+        })
+
+
+    </script>
+</body>
+</html>
